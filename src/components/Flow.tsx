@@ -106,7 +106,7 @@ const Flow = () => {
     event.dataTransfer.effectAllowed = 'move';
   };
 
-  const onNodeClick = useCallback((event: React.MouseEvent, node: CustomNode) => {
+  const onNodeClick = useCallback((_: React.MouseEvent, node: CustomNode) => {
     setSelectedNode(node);
   }, []);
 
